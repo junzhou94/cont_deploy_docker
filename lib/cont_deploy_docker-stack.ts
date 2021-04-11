@@ -146,7 +146,7 @@ export class ContDeployDockerStack extends Stack {
   public createHelloWorldGithubSourceAction(sourceOutput: Artifact, oauthToken: SecretValue): GitHubSourceAction {
     return new GitHubSourceAction({
       actionName: 'my_github_source',
-      owner: 'logemann',
+      owner: 'junzhou94',
       repo: 'HelloWorldWebApp',
       oauthToken: oauthToken,
       output: sourceOutput,
